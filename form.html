@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Trial Form</title>
+</head>
+
+<body>
+  <!--Form with input-your name and inputtype- submit to submit that-->
+  <form class="" action="index.html" method="post">
+  <label for="">Your name</label>
+  <input type="text" name="Your name" value="">
+  <input type="submit" name="submit" value="Submit">
+  <br><br>
+  <!--form with inputtype-checkboxd and inputtype-button to submit data-->
+  <input type="checkbox" name="" value="">
+  <label for="">Subscribe to our newsletters</label>
+  <input type="button" name="" value="Submit">
+  <br><br>
+  <!--form with inputtype-radio-->
+  <label for="">Your fav language</label>
+  <br>
+  <input type="radio" name="Favourite" value="Python">
+  <label for="">Python</label><br>
+  <input type="radio" name="Favourite" value="JavaScript">
+  <label for="">JavaScript</label><br>
+  <input type="radio" name="Favourite" value="Java">
+  <label for="">Java</label>
+  <br><br>
+  <!--Form with action attribute and after submit data will go to the gmail link or any other path which we will put-->
+  <!--the action link or mailto is not working-->
+  <form action="/action_page.php" method="post">
+    <label for="">Your name</label>
+    <input type="text" name="yourname" value=""><br>
+    <label for="">Your email</label>
+    <input type="text" name="youremail" value=""><br>
+    <label for="">Your message</label><br>
+    <textarea name="name" rows="10" cols="30"></textarea><br>
+    <input type="submit" name="" value="submit">
+    <br><br>
+    <!--form with select element to create a dropdown, with option attribute to put values
+  put size attribute to show no. of visible options
+use multiple attribute to select multiple options-->
+    <form class="" action="index.html" method="post">
+    <label for="">Choose your fav pet</label><br>
+    <select class="" name="pets" size=3 multiple>
+      <option value="">dog</option>
+      <option value="">cat</option>
+      <option value="">fish</option>
+    </select><br><br>
+        <input type="submit">
+    </form>
+    <br><br>
+    <!--Button element is used to crete an alert using html, put alert attribute in it-->
+    <form class="" action="index.html" method="post">
+      <label for="">Create an alert</label><br>
+      <button type="button" onclick="alert('Hello world')" name="button">Click me!</button>
+    </form>
+    <br>
+
+    <h4>HTML input types</h4><br>
+    <form class="" action="index.html" method="post">
+      <!--use input type password to get password like dots-->
+      <label for="">Username</label>
+      <input type="text" name="" value=""><br>
+      <label for="">password</label>
+      <input type="password" name="" value=""><br><br>
+      <input type="submit" name="" value="Submit">
+      <br><br>
+      <!--use input type reset to create a reset button, which when clivked resets all values to default-->
+      <label for="">Username</label>
+      <input type="text" name="" value=""><br>
+      <label for="">Email id</label>
+      <input type="text" name="" value=""><br><br>
+      <input type="submit" name="" value="Submit">
+      <input type="reset" name="" value="Reset">
+      <br><br>
+      <!--use input type date to add a date-->
+      <label for="">Your birthdate:</label><br>
+      <input type="date" name="" value="birthdate"><br>
+      <input type="submit" name="" value="Submit">
+      <br><br>
+      <!--use inputtype datetimelocal to add date with no timezone-->
+      <label for="">Birthday(date and time)</label><br>
+      <input type="datetime-local" name="" value=""><br>
+      <input type="submit" name="" value="Submit">
+      <br><br>
+      <!--use inputtype email to add email in proper format-->
+      <label for="">Your enail</label><br>
+      <input type="email" name="" value=""><br>
+      <input type="submit" name="" value="Submit">
+      <br><br>
+      <!--use inputtype file to upload files-->
+      <label for="">Upload</label><br>
+      <input type="file" name="" value=""><br>
+      <input type="submit" name="" value="Submit">
+      <br><br>
+      <!--use input type hidden to hide some data which you can see but the user cannot,and that hidden data is sent when submitted-->
+      <label for="">Card no.</label><br>
+      <input type="text="" value=""><br>
+      <input type="hidden" name="Cvv" value="321"><br>
+      <input type="submit" name="" value="Submit">
+      <br><br>
+      <!--use input type month to add month-->
+      <label for="">Birthday month</label><br>
+      <input type="month" name="" value=""><br>
+      <input type="submit" name="" value="Submit">
+      <br><br>
+      <!--use inputtype number to add numeric input field with a certain numeric range, by using quantity attributein label
+    and use min and max attribute in input-->
+      <label for="quantity">Age criteria(18-30)</label><br>
+      <input type="number" name="" value="" min="18" max="30"><br>
+      <input type="submit" name="" value="Submit">
+      <br><br>
+      <!--use inputtype range to create a range, use min and max attributes, also use step attribute for interval-->
+      <label for="">Age range(0-100)</label><br>
+      <input type="range" name="" value="" min="0" max="100" step="10"><br>
+      <input type="submit" name="" value="Submit">
+      <br><br>
+      <!--use inputtype search to reate search-->
+      <label for="">GOOGLE Search</label><br>
+      <input type="search" name="" value="" min="0" max="100" step="10"><br>
+      <input type="submit" name="" value="Search">
+      <br><br>
+      <!--use inputtype tel to add phone number-->
+      <label for="">Telephone:</label><br>
+      <input type="tel" name="" value="" placeholder="022-5656"><br>
+      <input type="submit" name="" value="Search">
+      <br><br>
+      <!--use inputtype time to add a timezone-->
+      <label for="">Your timezone</label><br>
+      <input type="<time></time>" name="" value=""><br>
+      <input type="submit" name="" value="Search">
+      <br><br>
+      <!--use inputtype url to add an url-->
+      <label for="">Check movie reviews only on-</label><br>
+      <input type="url" name="" value="https://www.imdb.com/?ref_=nv_home"><br>
+      <input type="submit" name="" value="Search">
+      <br><br>
+      <!--use inputtype week to add week and year-->
+      <label for="">Holiday week</label><br>
+      <input type="week" name="" value="><br>
+      <input type="submit" name="" value="Search">
+      <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>
